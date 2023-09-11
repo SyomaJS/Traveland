@@ -26,6 +26,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: top center;
 }
 
 .navbar {
@@ -703,5 +704,6 @@ button:hover {
 
 .img_covering:hover {
   transition: all 0.5s linear;
-  transform: scale(1.05);
+  transform: scale(1.03);
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
 }
