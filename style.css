@@ -704,6 +704,8 @@ button:hover {
 
 .img_covering:hover {
   transition: all 0.5s linear;
+
   transform: scale(1.03);
-  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 14px 10px 15px rgba(0, 0, 0, 0.1),
+    -14px 10px 15px rgba(0, 0, 0, 0.1);
 }
