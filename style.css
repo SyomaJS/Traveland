@@ -709,3 +709,19 @@ button:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 14px 10px 15px rgba(0, 0, 0, 0.1),
     -14px 10px 15px rgba(0, 0, 0, 0.1);
 }
+
+.wrapper {
+  position: relative;
+}
+
+.go_up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none; /* Initially hide the button */
+  cursor: pointer;
+}
+
+.go_up i {
+  font-size: 40px;
+}

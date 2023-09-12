@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Treveland</title>
   </head>
@@ -399,7 +406,11 @@
             <span class="footer_group_1_email">@shovasatkhira88.com</span>
 
             <div class="applicaitons">
-              <img class="img_covering" src="./images/Group 173.png" alt="icons" />
+              <img
+                class="img_covering"
+                src="./images/Group 173.png"
+                alt="icons"
+              />
             </div>
           </div>
 
@@ -429,5 +440,28 @@
         </div>
       </div>
     </div>
+
+    <div class="go_up" id="scrollUpButton">
+      <i class="fa-regular fa-circle-up" style="color: #ff9500"></i>
+    </div>
+
+    <script>
+      // Get the scroll-up button element
+      const scrollUpButton = document.getElementById("scrollUpButton");
+
+      // Show the button when the user scrolls down 300 pixels
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollUpButton.style.display = "block";
+        } else {
+          scrollUpButton.style.display = "none";
+        }
+      });
+
+      // Scroll to the top when the button is clicked
+      scrollUpButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>
